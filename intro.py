@@ -25,4 +25,4 @@ gavel = """
 
 def intro():
   print(gavel)
-  first_user = input("What is your name?\n> ").capitalize()
+  
