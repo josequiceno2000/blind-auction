@@ -5,22 +5,15 @@ def main():
     bidders = {}
     new_bidder = True
     intro()
-    bidder, bid_amount = bid()
-    bidders[bidder] = bid_amount
-    new_bidder = input("Are there any other bidders? Type 'yes' or 'no'\n> ") == "yes"
 
     while new_bidder:
-        print("\n" * 100)
         bidder, bid_amount = bid()
         bidders[bidder] = bid_amount
         new_bidder = input("Are there any other bidders? Type 'yes' or 'no'\n> ") == "yes"
+        print("\n" * 100)
     
-    print(bidders)
-
     winning_name, winning_bid = determine_winner(bidders)
     print(f"The winner is {winning_name} with a bid of ${winning_bid:.2f}!")
-    
-
 
 if __name__ == "__main__":
     main()

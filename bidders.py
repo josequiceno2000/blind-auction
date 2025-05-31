@@ -1,7 +1,7 @@
 
 def bid():
     user = input("What is your name?\n> ").capitalize()
-    bid = int(input("What is your bid?\n> $"))
+    bid = float(input("What is your bid?\n> $"))
     return user, bid
 
 def determine_winner(bidders: dict):
