@@ -9,5 +9,4 @@ def determine_winner(bidders: dict):
     for name, bid in bidders.items():
         if bid > max_amount:
             user_max, max_amount = name, bid
-
     return user_max, max_amount
